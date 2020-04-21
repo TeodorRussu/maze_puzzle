@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8e8626de-48ec-43b6-b26d-ea21fbfb4e34" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="8e8626de-48ec-43b6-b26d-ea21fbfb4e34" name="Default Changelist" comment="init code clean">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Maze.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Maze.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MazeCell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MazeCell.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MazeSolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MazeSolver.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +35,7 @@
     <property name="JavaClassFindUsagesOptions.isSearchForTextOccurrences" value="false" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="settings.editor.selected.configurable" value="configurable.group.build" />
@@ -73,72 +76,114 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1587416731060</updated>
-      <workItem from="1587416732998" duration="2637000" />
+      <workItem from="1587416732998" duration="2875000" />
+      <workItem from="1587420407598" duration="1661000" />
+      <workItem from="1587450170847" duration="224000" />
+      <workItem from="1587463403036" duration="11971000" />
     </task>
+    <task id="LOCAL-00001" summary="init code clean">
+      <created>1587419505160</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1587419505161</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="init code clean" />
+    <option name="LAST_COMMIT_MESSAGE" value="init code clean" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="421" y="137" key="CommitChangelistDialog2" timestamp="1587419326311">
+    <state x="653" y="232" key="#com.intellij.ide.util.MemberChooser" timestamp="1587476324089">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state x="421" y="137" key="CommitChangelistDialog2/-2560.-157.2560.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1587419326311" />
-    <state width="722" height="466" key="DebuggerActiveHint" timestamp="1587418077159">
+    <state x="653" y="232" key="#com.intellij.ide.util.MemberChooser/-2560.-157.2560.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1587476324089" />
+    <state x="603" y="250" key="#xdebugger.evaluate" timestamp="1587474571230">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="722" height="466" key="DebuggerActiveHint/-2560.-157.2560.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1587418077159" />
-    <state width="1638" height="197" key="GridCell.Tab.0.bottom" timestamp="1587418717424">
+    <state x="603" y="250" key="#xdebugger.evaluate/-2560.-157.2560.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1587474571230" />
+    <state x="421" y="137" key="CommitChangelistDialog2" timestamp="1587476805129">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="197" key="GridCell.Tab.0.bottom/-2560.-157.2560.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1587418717424" />
-    <state width="1638" height="197" key="GridCell.Tab.0.center" timestamp="1587418717422">
+    <state x="421" y="137" key="CommitChangelistDialog2/-2560.-157.2560.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1587476805129" />
+    <state width="722" height="466" key="DebuggerActiveHint" timestamp="1587475665263">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="197" key="GridCell.Tab.0.center/-2560.-157.2560.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1587418717422" />
-    <state width="1638" height="197" key="GridCell.Tab.0.left" timestamp="1587418717421">
+    <state width="722" height="466" key="DebuggerActiveHint/-2560.-157.2560.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1587475665263" />
+    <state x="168" y="115" key="DiffContextDialog" timestamp="1587475481332">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="197" key="GridCell.Tab.0.left/-2560.-157.2560.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1587418717421" />
-    <state width="1638" height="197" key="GridCell.Tab.0.right" timestamp="1587418717423">
+    <state x="168" y="115" key="DiffContextDialog/-2560.-157.2560.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1587475481332" />
+    <state width="1638" height="134" key="GridCell.Tab.0.bottom" timestamp="1587476808532">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="197" key="GridCell.Tab.0.right/-2560.-157.2560.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1587418717423" />
-    <state width="1638" height="197" key="GridCell.Tab.1.bottom" timestamp="1587418717426">
+    <state width="1638" height="134" key="GridCell.Tab.0.bottom/-2560.-157.2560.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1587476808532" />
+    <state width="1638" height="134" key="GridCell.Tab.0.center" timestamp="1587476808529">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="197" key="GridCell.Tab.1.bottom/-2560.-157.2560.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1587418717426" />
-    <state width="1638" height="197" key="GridCell.Tab.1.center" timestamp="1587418717425">
+    <state width="1638" height="134" key="GridCell.Tab.0.center/-2560.-157.2560.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1587476808529" />
+    <state width="1638" height="134" key="GridCell.Tab.0.left" timestamp="1587476808528">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="197" key="GridCell.Tab.1.center/-2560.-157.2560.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1587418717425" />
-    <state width="1638" height="197" key="GridCell.Tab.1.left" timestamp="1587418717424">
+    <state width="1638" height="134" key="GridCell.Tab.0.left/-2560.-157.2560.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1587476808528" />
+    <state width="1638" height="134" key="GridCell.Tab.0.right" timestamp="1587476808530">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="197" key="GridCell.Tab.1.left/-2560.-157.2560.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1587418717424" />
-    <state width="1638" height="197" key="GridCell.Tab.1.right" timestamp="1587418717426">
+    <state width="1638" height="134" key="GridCell.Tab.0.right/-2560.-157.2560.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1587476808530" />
+    <state width="1638" height="134" key="GridCell.Tab.1.bottom" timestamp="1587476808389">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="197" key="GridCell.Tab.1.right/-2560.-157.2560.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1587418717426" />
+    <state width="1638" height="134" key="GridCell.Tab.1.bottom/-2560.-157.2560.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1587476808389" />
+    <state width="1638" height="134" key="GridCell.Tab.1.center" timestamp="1587476808389">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state width="1638" height="134" key="GridCell.Tab.1.center/-2560.-157.2560.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1587476808389" />
+    <state width="1638" height="134" key="GridCell.Tab.1.left" timestamp="1587476808388">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state width="1638" height="134" key="GridCell.Tab.1.left/-2560.-157.2560.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1587476808388" />
+    <state width="1638" height="134" key="GridCell.Tab.1.right" timestamp="1587476808389">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state width="1638" height="134" key="GridCell.Tab.1.right/-2560.-157.2560.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1587476808389" />
+    <state x="440" y="278" key="Vcs.Push.Dialog.v2" timestamp="1587419520361">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="440" y="278" key="Vcs.Push.Dialog.v2/-2560.-157.2560.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1587419520361" />
+    <state width="840" height="513" key="XDebugger.FullValuePopup" timestamp="1587475665245">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state width="840" height="513" key="XDebugger.FullValuePopup/-2560.-157.2560.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1587475665245" />
+    <state x="494" y="371" key="com.intellij.ide.util.TipDialog" timestamp="1587450299353">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="494" y="371" key="com.intellij.ide.util.TipDialog/-2560.-157.2560.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1587420408187" />
+    <state x="494" y="371" key="com.intellij.ide.util.TipDialog/0.23.1680.1027@0.23.1680.1027" timestamp="1587450299353" />
+    <state x="387" y="281" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1587476071924">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="387" y="281" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/-2560.-157.2560.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1587476071924" />
+    <state x="915" y="179" key="extract.method.dialog" timestamp="1587470163815">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="915" y="179" key="extract.method.dialog/-2560.-157.2560.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1587470163815" />
+    <state x="505" y="250" width="670" height="676" key="search.everywhere.popup" timestamp="1587474479519">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="505" y="250" width="670" height="676" key="search.everywhere.popup/-2560.-157.2560.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1587474479519" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>3</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Maze.java</url>
-          <line>28</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Maze.java</url>
-          <line>11</line>
-          <option name="timeStamp" value="3" />
+          <url>file://$PROJECT_DIR$/src/MazeSolver.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="42" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

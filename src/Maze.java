@@ -70,7 +70,7 @@ public class Maze {
 
         // check the cell contents
         MazeCell cell = getCell(position);
-        if (cell.getCellInfo() != CellInfo.VISITED) {
+        if (cell.getCellInfo() != CellInfo.NONE) {
             return false;
         }
         if (cell.getCellType() == CellType.WALL) {
@@ -95,7 +95,6 @@ public class Maze {
         if (cell.getCellType() == CellType.WALL) {
             return false;
         }
-
         return true;
     }
 
