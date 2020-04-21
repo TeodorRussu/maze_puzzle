@@ -4,7 +4,6 @@ public class MazeCell {
     private CellInfo cellInfo;
     private double pathCost = Double.MAX_VALUE;
     private double heuristicCost = Double.MAX_VALUE;
-    private MazeCell previous;
 
     private MazeCell(CellType cellType, CellInfo cellInfo) {
         this.cellType = cellType;
@@ -45,14 +44,6 @@ public class MazeCell {
 
     public void setHeuristicCost(double heuristicCost) {
         this.heuristicCost = heuristicCost;
-    }
-
-    public MazeCell getPrevious() {
-        return previous;
-    }
-
-    public void setPrevious(MazeCell previous) {
-        this.previous = previous;
     }
 
     @Override

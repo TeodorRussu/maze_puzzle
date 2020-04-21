@@ -1,41 +1,33 @@
-import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
-import java.util.Map;
 import java.util.Queue;
 
 public class MazeSolver {
 
     private static final int MOVE_COST = 1;
-    private static Map<Double, List<Position>> visited = new HashMap<>();
 
     private MazeSolver() {
     }
 
-    private static void drawPath(final Maze maze) {
+    private static Maze drawPath(final Maze maze) {
 
         Position currentPosition = maze.getGoal();
-        MazeCell currentCell = maze.getCell(currentPosition).getPrevious();
+        MazeCell currentCell = maze.getCell(currentPosition);
+
         while (!currentCell.getCellType().equals(CellType.START)) {
+            final double targetCellCost = currentCell.getPathCost() - MOVE_COST;
+            List<Position> pathCandidates = maze.getPathCandidates(currentPosition);
+
+            for (Position pathCandidatePosition : pathCandidates) {
+                 if(maze.getCell(pathCandidatePosition).getPathCost() == targetCellCost){
+                     currentCell = maze.getCell(pathCandidatePosition);
+                     currentPosition = pathCandidatePosition;
+                     break;
+                 }
+            }
             currentCell.setCellInfo(CellInfo.PATH);
-            currentCell = currentCell.getPrevious();
         }
-
-
-
-//        while (!currentCell.getCellType().equals(CellType.START)) {
-//            double targetCellCost = currentCell.getPathCost() - 1;
-//
-//            List<Position> positionsToCheck = visited.get(targetCellCost);
-//            for (Position position : positionsToCheck) {
-//                if (position.getDistance(currentPosition) == 1.0) {
-//                    currentCell = maze.getCell(position);
-//                    currentPosition = position;
-//                    break;
-//                }
-//            }
-//            currentCell.setCellInfo(CellInfo.PATH);
-//        }
+        return maze;
     }
 
     public static Maze solve(final Maze maze) {
@@ -52,27 +44,19 @@ public class MazeSolver {
             currentPosition = mazeCellsQueue.poll();
             currentCell = maze.getCell(currentPosition);
             currentCell.setCellInfo(CellInfo.VISITED);
-//            addCellToVisited(currentCell.getPathCost(), currentPosition);
 
-            List<Position> pathCandidates = maze.getPathCandidates(currentPosition);
-
-            for (Position pos : pathCandidates) {
+            List<Position> movesCandidates = maze.getMoves(currentPosition);
+            for (Position pos : movesCandidates) {
                 MazeCell cell = maze.getCell(pos);
                 if (!cell.getCellInfo().equals(CellInfo.VISITED)) {
                     cell.setPathCost(currentCell.getPathCost() + MOVE_COST);
-                    cell.setPrevious(currentCell);
                 }
             }
-            mazeCellsQueue.addAll(pathCandidates);
+            mazeCellsQueue.addAll(movesCandidates);
         }
         if (currentCell.getCellType().equals(CellType.GOAL)) {
-            drawPath(maze);
+            return drawPath(maze);
         }
         return maze;
     }
-
-//    private static void addCellToVisited(Double pathcost, Position currentPosition) {
-//        List<Position> visitedWithSameCost = visited.computeIfAbsent(pathcost, k -> new LinkedList<>());
-//        visitedWithSameCost.add(currentPosition);
-//    }
 }
